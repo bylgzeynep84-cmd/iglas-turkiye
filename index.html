@@ -9,10 +9,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@700&display=swap" />
     <title>iGLAS Türkiye — Genetik Okuryazarlık ve Tutum Anketi</title>
-    <script type="module" crossorigin src="/iglas-turkiye/assets/index-uoCi0SXd.js"></script>
-    <link rel="stylesheet" crossorigin href="/iglas-turkiye/assets/index-1BryqycB.css">
+    <script type="module" crossorigin src="/iglas-turkiye/assets/index-BdWlM2BY.js"></script>
+    <link rel="stylesheet" crossorigin href="/iglas-turkiye/assets/index-Bv9iS_1J.css">
   </head>
   <body>
     <div id="root"></div>
+    <!-- Uygulama açılamazsa (çok eski tarayıcı / ağ engeli) boş ekran yerine yönlendirme göster -->
+    <div id="fallback" style="display:none;max-width:520px;margin:48px auto;padding:24px;font-family:system-ui,sans-serif;line-height:1.5;color:#23233F;background:#FDF7ED;border-radius:12px">
+      <h2 style="margin-top:0">Anket bu tarayıcıda açılamadı</h2>
+      <p>Lütfen şunları deneyin:</p>
+      <ol>
+        <li>Bağlantıyı <b>Chrome</b> veya <b>Safari</b>'nin güncel sürümünde açın (WhatsApp içinden değil).</li>
+        <li>Wi-Fi'ı kapatıp <b>mobil veriyle</b> tekrar deneyin.</li>
+        <li>Ana adres: <a href="https://iglas-saha.vercel.app/anket">iglas-saha.vercel.app/anket</a></li>
+      </ol>
+      <p style="font-size:14px;color:#555">iGLAS Türkiye · İstanbul Galata Üniversitesi</p>
+    </div>
+    <script nomodule>document.getElementById('fallback').style.display='block'</script>
+    <script>
+      setTimeout(function () {
+        var r = document.getElementById('root');
+        if (r && !r.children.length) document.getElementById('fallback').style.display = 'block';
+      }, 12000);
+    </script>
   </body>
 </html>
